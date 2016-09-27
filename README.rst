@@ -1,5 +1,10 @@
-.. image:: https://secure.travis-ci.org/ActiveState/appdirs.png
-    :target: http://travis-ci.org/ActiveState/appdirs
+.. image:: https://travis-ci.org/mindw/appdirs.svg?branch=master
+   :target: https://travis-ci.org/mindw/appdirs
+   :alt: Build Status
+
+.. image:: https://ci.appveyor.com/api/projects/status/github/mindw/appdirs?branch=master&svg=true
+   :target: https://ci.appveyor.com/project/mindw/appdirs
+   :alt: Build Status (Windows)
 
 the problem
 ===========
