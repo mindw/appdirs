@@ -4,8 +4,13 @@ appdirs Changelog
 appdirs 2.0.0 (dev)
 -------------------
 
-- [issue #38] Fix _winreg import on Windows Py3
 - drop Python 2.6, 3.2 and 3.3 from tests and travis.
+- [issue #38] Fix _winreg import on Windows Py3
+- [PR #60] & [PR #52] Fix several typos
+- [PR #64] Corrected *_config_dir() for OSX
+- [PR #56] Make appname optional in AppDirs wrapper as in the wrapped functions.
+  Fixes [issue 55].
+- [PR #53] support XDG_STATE_HOME
 
 appdirs 1.4.0
 -------------
