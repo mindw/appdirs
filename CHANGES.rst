@@ -1,10 +1,11 @@
 appdirs Changelog
 =================
 
-appdirs 1.4.1 (dev)
+appdirs 2.0.0 (dev)
 -------------------
 
 - [issue #38] Fix _winreg import on Windows Py3
+- drop Python 2.6, 3.2 and 3.3 from tests and travis.
 
 appdirs 1.4.0
 -------------

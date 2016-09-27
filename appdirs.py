@@ -13,12 +13,13 @@ See <http://github.com/ActiveState/appdirs> for details and usage.
 # - Mac OS X: http://developer.apple.com/documentation/MacOSX/Conceptual/BPFileSystem/index.html
 # - XDG spec for Un*x: http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
 
-__version_info__ = (1, 4, 1)
-__version__ = '.'.join(map(str, __version_info__))
-
 
 import sys
 import os
+
+__version__ = '1.4.1'
+__version_info__ = __version__.split('.')
+
 
 PY3 = sys.version_info[0] == 3
 
@@ -39,7 +40,6 @@ if sys.platform.startswith('java'):
         system = 'linux2'
 else:
     system = sys.platform
-
 
 
 def user_data_dir(appname=None, appauthor=None, version=None, roaming=False):
@@ -228,8 +228,8 @@ def site_config_dir(appname=None, appauthor=None, version=None, multipath=False)
 
     Typical site config directories are:
         Mac OS X:   same as site_data_dir
-        Unix:       /etc/xdg/<AppName> or $XDG_CONFIG_DIRS[i]/<AppName> for each value in
-                    $XDG_CONFIG_DIRS
+        Unix:       /etc/xdg/<AppName> or $XDG_CONFIG_DIRS[i]/<AppName> for
+                    each value in $XDG_CONFIG_DIRS
         Win *:      same as site_data_dir
         Vista:      (Fail! "C:\ProgramData" is a hidden *system* directory on Vista.)
 
@@ -536,6 +536,7 @@ def _get_win_folder_with_ctypes(csidl_name):
             buf = buf2
 
     return buf.value
+
 
 def _get_win_folder_with_jna(csidl_name):
     import array
