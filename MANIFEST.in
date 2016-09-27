@@ -1,5 +1,4 @@
-include README.rst
 include CHANGES.rst
 include LICENSE.txt
-include *.py
-include test/*.py
+recursive-include test *.py
+include tox.ini

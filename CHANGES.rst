@@ -3,7 +3,7 @@ appdirs Changelog
 
 appdirs 2.0.0 (dev)
 -------------------
-
+- add windows testing with appveyor.
 - drop Python 2.6, 3.2 and 3.3 from tests and travis.
 - [issue #38] Fix _winreg import on Windows Py3
 - [PR #60] & [PR #52] Fix several typos
